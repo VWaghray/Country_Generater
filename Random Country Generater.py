@@ -22,7 +22,7 @@ def add():
     list1.append(Name)
     label["text"] = "Country Name: " + str(list1)
     Name1 = Text1.get()
-    list1.append(Name1)
+    list2.append(Name1)
     label1["text"] = "City Name: " + str(list2)
     
     
@@ -33,11 +33,11 @@ def random_friend():
     random_no1 = random.randint(0, lenght1-1)
     Friend = list1[random_no]
     label2["text"]="Random Country" + str(Friend)
-    Friend1 = list1[random_no1]
+    Friend1 = list2[random_no1]
     label3["text"] = "Random City: " + str(Friend1)
     
 Text.place(relx=0.5, rely=0.2, anchor=CENTER)
-Text1.place(root, relx=0.5, rely=0.3, anchor=CENTER)
+Text1.place(relx=0.5, rely=0.3, anchor=CENTER)
 btn = Button(root, text = 'Display Country and City Name', command=add)
 btn.place(relx=0.5, rely=0.4, anchor=CENTER)
 label.place(relx=0.5, rely=0.5, anchor=CENTER)
